@@ -1,12 +1,11 @@
 import * as React from "react";
 
-const SvgLogo = (props) => (
+const SvgLogo = () => (
     <svg
     width={32}
     height={32}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
   >
     <rect id="svg-logo-bg" x={0.5} y={0.5} width={31} height={31} rx={15.5} fill="#121316" />
     <path

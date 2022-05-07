@@ -155,5 +155,10 @@ nav li {
     // Menu mobile
     .btn-menu {
         display: block;
+        background: none;
+    }
+
+    .btn-menu svg rect {
+        fill: $black-1;
     }
 }

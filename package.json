@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/drei": "^9.7.1",
-    "@react-three/fiber": "^8.0.13",
-    "@splinetool/loader": "^0.9.38",
-    "@splinetool/r3f-spline": "^1.0.1",
-    "@splinetool/runtime": "^0.9.38",
     "@svgr/cli": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",

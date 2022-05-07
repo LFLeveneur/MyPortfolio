@@ -50,7 +50,7 @@ const Navigation = () => {
                         <li><NavLink to="/Contact" className="no"><button className="btn-contact">Contact</button></NavLink></li>
                     </ul>
                 )}
-                <button className="btn-menu" onClick={handleClick}>{SvgButtonMenu}</button>
+                <button className="btn-menu" onClick={handleClick}><SvgButtonMenu /></button>
             </nav>
         </div>
     )
