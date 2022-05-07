@@ -1,20 +1,21 @@
 import React from "react";
 
+
 // Fill data
-import { dataContact } from '../data';
+import { dataServices } from '../data';
 
 // Fill React component
 import Footer from "../compenents/react/Footer";
 import Navigation from "../compenents/react/Navigation";
 
-const Contact = () => {
+const Services = () => {
     return (
-        <div className="contact">
+        <div className="services">
             <Navigation />
-                <h1 className="home">{dataContact.title}</h1>
+                <h1 className="home">{dataServices.title}</h1>
             <Footer />
         </div>
     );
 }
 
-export default Contact;
+export default Services;

@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Fill data
+import { dataHome } from '../data';
+
 // Fill React component
 import Navigation from '../compenents/react/Navigation';
 import CardCompetence from '../compenents/react/CardCompetence';
@@ -19,15 +22,15 @@ const Home = () => {
             <Navigation />
             <div className="home">
                 <div className="description">
-                    <h2>Hello, I’m</h2>
-                    <h1>Louis</h1>
-                    <p> a student web developer based in Paris. I’m a passionate and creative person who loves to create and build things. I’m a self-taught developer and I’m always looking for new challenges and opportunities to learn and grow.</p>
+                    <h2>{dataHome.titleH2}</h2>
+                    <h1>{dataHome.titleH1}</h1>
+                    <p>{dataHome.description}</p>
                 </div>
-                <Model className='model' />
+                {/* <Model className='model' /> */}
                 <div className="competences">
-                    <div className='competence developer'><CardCompetence img={Developer} competence='Developer' /></div>
-                    <div className='competence designer-3d'><CardCompetence img={Designer3D} competence='Designer 3D' /></div>
-                    <div className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence='Designer UI/UX' /></div>
+                    <div className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></div>
+                    <div className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></div>
+                    <div className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence={dataHome.competences[2]} /></div>
                 </div>
             </div>
             <Footer />

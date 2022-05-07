@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import SvgLogo from './svg-icon/SvgLogo';
-import ButtonMenu from '../../assets/img/svg/button-menu.svg';
+import SvgButtonMenu from './svg-icon/SvgButtonMenu';
 
 const Navigation = () => {
     
@@ -44,13 +44,13 @@ const Navigation = () => {
                 {/* If isOpen is true, or the screen is bigger than 768px, the menu will be open/display */}
                 {(isOpen || widthScreen > 768) && (
                     <ul>
-                        <li><NavLink to="/Work" >Work</NavLink></li>
-                        <li><NavLink to="/Service" >Service</NavLink></li>
+                        <li><NavLink to="/Works" >Works</NavLink></li>
+                        <li><NavLink to="/Services" >Services</NavLink></li>
                         <li><NavLink to="/About" >About</NavLink></li>
                         <li><NavLink to="/Contact" className={"active" ? "no" : ""}><button className="btn-contact">Contact</button></NavLink></li>
                     </ul>
                 )}
-                <button className="btn-menu" onClick={handleClick}><img src={ButtonMenu} alt="button menu" /></button>
+                <button className="btn-menu" onClick={handleClick}><img src={SvgButtonMenu} alt="button menu" /></button>
             </nav>
         </div>
     )
