@@ -26,7 +26,7 @@ const Home = () => {
                     <h1>{dataHome.titleH1}</h1>
                     <p>{dataHome.description}</p>
                 </div>
-                {/* <Model className='model' /> */}
+                <Model className='model' />
                 <div className="competences">
                     <div className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></div>
                     <div className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></div>

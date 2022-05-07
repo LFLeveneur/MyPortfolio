@@ -37,20 +37,20 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <nav>
-                <NavLink to="/" className={"active" ? "no" : ""}>
+                <NavLink to="/" className="no">
                     {SvgLogo}
                 </NavLink>
-
+                
                 {/* If isOpen is true, or the screen is bigger than 768px, the menu will be open/display */}
                 {(isOpen || widthScreen > 768) && (
                     <ul>
                         <li><NavLink to="/Works" >Works</NavLink></li>
                         <li><NavLink to="/Services" >Services</NavLink></li>
                         <li><NavLink to="/About" >About</NavLink></li>
-                        <li><NavLink to="/Contact" className={"active" ? "no" : ""}><button className="btn-contact">Contact</button></NavLink></li>
+                        <li><NavLink to="/Contact" className="no"><button className="btn-contact">Contact</button></NavLink></li>
                     </ul>
                 )}
-                <button className="btn-menu" onClick={handleClick}><img src={SvgButtonMenu} alt="button menu" /></button>
+                <button className="btn-menu" onClick={handleClick}>{SvgButtonMenu}</button>
             </nav>
         </div>
     )

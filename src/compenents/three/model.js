@@ -9,7 +9,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 
 export default function Scene({ ...props }) {
-  const { nodes, materials } = useSpline('https://prod.spline.design/O78EjJj9jpJdSoeG/scene.spline')
+  const { nodes, materials } = useSpline('https://prod.spline.design/O78EjJj9jpJdSoeG/scene.splinecode')
 
   const [AxeX, setAxeX] = useState(0);
   const [AxeY, setAxeY] = useState(0);
