@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    bottom: 56px;
+    padding: 4px 88px;
+    z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        justify-content: center;
+        padding: 4px 12px;
+    }
+}

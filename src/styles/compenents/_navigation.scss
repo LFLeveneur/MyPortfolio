@@ -1,0 +1,160 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 32px;
+    z-index: 998;
+}
+
+nav {
+    background: $black-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding: 4px 12px;
+    border-radius: 56px;
+}
+
+// Font
+nav a, nav button {
+    color: $white-2;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+// Logo
+
+nav svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.no #svg-logo-bg {
+    fill: $black-1;
+}
+
+.no.active #svg-logo-bg {
+    fill: $orange-1;
+} 
+
+.no.active #svg-logo-stroke {
+    stroke: $orange-1;
+}
+
+// Menu
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 16px;
+}
+
+nav li:last-child {
+    margin-left: 32px;
+}
+
+nav li {
+    padding: 8px;
+}
+
+// Contact
+.btn-contact {
+    padding: 4px 24px;
+    color: $white-1;
+    background: none;
+    border: solid 2px $white-1;
+    border-radius: 56px;
+    cursor: pointer;
+}
+
+.active .btn-contact {
+    background: $orange-1;
+    border: solid 2px $orange-1;
+}
+
+// Menu Mobile
+.btn-menu {
+    display: none;
+}
+
+// Menu active
+.active::before {
+    content: '';
+    position: absolute;
+    background: $orange-1;
+    width: 4px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+nav li {
+    position: relative;
+}
+
+.no.active::before {
+    display: none;
+}
+
+
+
+
+// --------------------------------------------------------------
+// Media Queries
+// --------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+    nav {
+        background: none;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    // Logo
+    /* .no #svg-logo-bg {
+        fill: $orange-1;
+    }
+
+    .no #svg-logo-stroke {
+        stroke: $orange-1;
+    } */
+
+    // Menu
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        background: $black-2;
+        border-radius: 8px;
+        position: absolute;
+        right: 12px;
+        top: 56px;
+    }
+
+    nav li:last-child {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    // Contact
+    /* .btn-contact {
+        background: $orange-1;
+        border: solid 2px $orange-1;
+    } */
+
+    // Menu mobile
+    .btn-menu {
+        display: block;
+        background: none;
+    }
+}

@@ -1,0 +1,44 @@
+// --------------------------------------------------------------
+// Reset
+// --------------------------------------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+// --------------------------------------------------------------
+// Colors
+// --------------------------------------------------------------
+
+$black-1: #121316;
+$black-2: #181A1D;
+$white-1: #FFFFFF;
+$white-2: #F6F6F6;
+$orange-1: #F2994A;
+
+// --------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------
+
+$satoshi-font: 'Satoshi-Variable', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $satoshi-font;
+    font-weight: 900;
+    font-style: normal;
+    color: $white-1;
+}
+
+p, a, {
+    font-family: $satoshi-font;
+    font-weight: 300;
+    font-style: normal;
+    color: $white-1;
+}
+
+
+

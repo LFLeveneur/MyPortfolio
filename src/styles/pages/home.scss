@@ -1,0 +1,74 @@
+body {
+  background: $black-1;
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // Attention: Changer la valeur
+    // flex-wrap: wrap;
+    padding: 0 88px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    color: $white-1;
+}
+
+.description h1 {
+    font-size: 128px;
+    line-height: 1;
+    margin-left: -8px;
+}
+
+.description h2 {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.competences {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px 32px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "developer designer-3d"
+    "developer designer-ui-ux";
+}
+
+.developer { grid-area: developer; }
+
+.designer-3d { grid-area: designer-3d; }
+
+.designer-ui-ux { grid-area: designer-ui-ux; }
+
+.competence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+

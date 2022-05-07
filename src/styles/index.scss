@@ -1,0 +1,15 @@
+// Config
+@import 'satoshi';
+@import 'settings';
+
+// Navigation
+@import './compenents/navigation';
+@import './compenents/footer';
+
+// Pages
+@import './pages/home';
+@import './pages/work';
+
+// Components
+@import './compenents/card-competence';
+@import './compenents/icon-button';
