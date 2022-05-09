@@ -1,0 +1,179 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 120px;
+}
+
+.services-content>h1 {
+    margin-bottom: 64px;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Content of the banner section in top of the page
+// ---------------------------------------------------------------------------------------------------------------------
+.services-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Content of the right side of the banner section
+// ---------------------------------------------------------------------------------------------------------------------
+.services-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-info-content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.services-info-content li {
+    margin-right: 8px;
+    background-color: $black-1;
+    border-radius: 56px;
+    border: 1px solid $white-1;
+    padding: 4px 16px;
+    margin-bottom: 8px;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Content of the left side of the banner section
+// ---------------------------------------------------------------------------------------------------------------------
+.services-info-indicatif {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+// Content of the available services
+.services-info-available {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.services-info-available>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $black-2;
+    padding: 4px 16px;
+    border-radius: 56px;
+    margin-bottom: 8px;
+}
+
+.services-info-available>div p{
+    color: $red-1;
+}
+
+.services-info-available-cercle {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 56px;
+    border: solid 4px $red-1;
+    margin-right: 8px;
+}
+
+.services-info-available>p {
+    margin-right: 16px;
+}
+
+// Content of the services : price and experience
+.services-info-price-experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 8px;
+    background-color: $black-2;
+}
+
+.services-info-price-experience div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.services-info-price-experience div:first-child {
+    border: solid 1px $white-1;
+    border-radius: 8px 0 0 8px;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Content of the left side of the banner section
+// ---------------------------------------------------------------------------------------------------------------------
+.services-cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+}
+
+.services-cards .card-service:first-child {
+    margin-right: 16px;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Media queries
+// ---------------------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 1024px) {
+    .services-cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+    
+    .services-cards .card-service:first-child {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    // Content of the banner section in top of the page
+    .services-info {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    
+    // Content of the right side of the banner section
+    .services-info-content {
+        margin-bottom: 32px;
+    }
+
+    // Content of the left side of the banner section
+    .services-info-indicatif {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Content of the available services */
+    .services-info-available {
+        align-items: flex-start;
+    }
+
+    .services-info-available>p {
+        margin-left: 16px;
+    }
+}

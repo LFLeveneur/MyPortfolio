@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Fill data
 import { dataHome } from '../data';
@@ -28,9 +29,9 @@ const Home = () => {
                 </div>
                 {/* <Model className='model' /> */}
                 <div className="competences">
-                    <div className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></div>
-                    <div className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></div>
-                    <div className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence={dataHome.competences[2]} /></div>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}}><div className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></div></Link>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}}><div className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></div></Link>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}}><div className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence={dataHome.competences[2]} /></div></Link>
                 </div>
             </div>
             <Footer />
