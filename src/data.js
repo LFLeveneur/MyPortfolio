@@ -12,7 +12,7 @@ import imgServiceDesigner from './assets/img/png/card-service/img-service-ui-ux-
 export const dataHome = {
     titleH2: 'Hello, I’m',
     titleH1: 'Louis',
-    description: 'a student web developer based in Paris. I’m a passionate and creative person who loves to create and build things. I’m a self-taught developer and I’m always looking for new challenges and opportunities to learn and grow.',
+    description: 'a student web developer and web designer based in Paris.',
     competences: ['Developer', 'Designer 3D', 'Designer UI/UX']
 }
 
@@ -92,7 +92,9 @@ export const dataServices = {
 }
 
 export const dataAbout = {
-    title: 'About',
+    title: `Hello ! My name is Leveneur Louis.`,
+    text1: `I'm originally from La Reunion, but I currently live in Paris, France. I'm studying engineering in Hetic. School of digital web reputable in its field. Junior front end developer & web designer.`,
+    text2: `I am very motivated, I like to solve problems, work in a team, I’m always looking for new challenges and opportunities to learn and grow.`
 }
 
 export const dataContact = {

@@ -11,7 +11,12 @@ const About = () => {
     return (
         <div className="about">
             <Navigation />
-                <h1 className="home">{dataAbout.title}</h1>
+            <div className="about-content">
+                <h1>{dataAbout.title}</h1>
+                <p>{dataAbout.text1}</p>
+                <br/>
+                <p>{dataAbout.text2}</p>
+            </div>
             <Footer />
         </div>
     );

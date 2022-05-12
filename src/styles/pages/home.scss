@@ -12,22 +12,27 @@ body {
 }
 
 .home {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    // Attention: Changer la valeur
-    // flex-wrap: wrap;
-    padding: 0 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.description{
+.home-content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 120px 0 120px;
+  justify-content: space-between;
+}
+
+.description {
     display: flex;
     flex-direction: column;
     width: 356px;
     color: $white-1;
+    margin-bottom: 32px;
 }
 
 .description h1 {
@@ -42,7 +47,7 @@ body {
 }
 
 .description p {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   margin-top: 16px;
 }
@@ -53,8 +58,8 @@ body {
   gap: 32px 32px;
   grid-auto-flow: row;
   grid-template-areas:
-    "developer designer-3d"
-    "developer designer-ui-ux";
+    "developer developer"
+    "designer-ui-ux designer-3d";
 }
 
 .developer { grid-area: developer; }
@@ -72,3 +77,37 @@ body {
   height: 100%;
 }
 
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Media queries
+// ---------------------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 768px) {
+  .home {
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .home-content {
+    flex-direction: column;
+  }
+
+  .competences {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "developer designer-ui-ux"
+      "designer-3d .";
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .competences {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "developer"
+      "designer-ui-ux"
+      "designer-3d";
+  }
+}

@@ -11,7 +11,27 @@ const Contact = () => {
     return (
         <div className="contact">
             <Navigation />
-                <h1 className="home">{dataContact.title}</h1>
+            <div className="contact-content">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name"><p>Name:</p></label>
+                            <input type="text" id="name" name="user_name" placeholder='Your Name' />
+                        </li>
+                        <li>
+                            <label for="mail"><p>E-mail:</p></label>
+                            <input type="email" id="mail" name="user_email" placeholder='Your Mail' />
+                        </li>
+                        <li>
+                            <label for="msg"><p>Message:</p></label>
+                            <textarea id="msg" name="user_message" placeholder='Your Message'></textarea>
+                        </li>
+                        <li>
+                            <button type="submit"><h3>Send</h3></button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
             <Footer />
         </div>
     );
