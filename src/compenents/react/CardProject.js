@@ -20,7 +20,7 @@ const CardProject = ({img, title, language, description, url, urlGitHub}) => {
                 <p>{description}</p>
             </div>
             <div className="card-project-links">
-                <button className="btn-url-git-hub"><a href={urlGitHub} target="_blank" rel="noopener noreferrer"><SvgUrlGitHub /></a></button>
+                <button className="btn-url-git-hub" style={urlGitHub ? {display: 'block'} : {display: 'none'}}><a href={urlGitHub} target="_blank" rel="noopener noreferrer"><SvgUrlGitHub /></a></button>
                 <button className="btn-url-view"><a href={url} target="_blank" rel="noopener noreferrer"><h3>View</h3></a></button>
             </div>
         </div>

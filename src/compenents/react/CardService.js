@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const CardService = ({img, title, language, description}) => {
+const CardService = ({img, title, language, description, url}) => {
     return (
         <div className="card-service">
             <img src={img} alt="card-service" />
@@ -15,9 +16,9 @@ const CardService = ({img, title, language, description}) => {
                         }
                         )}
                     </ul>
-                    <p>{description}</p>
+                    {/* <p>{description}</p> */}
                 </div>
-                <button className="btn-url-view"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><h3>View all project</h3></a></button>
+                <button className="btn-url-view"><Link to='/works'><h3>View all project</h3></Link></button>
             </div>
         </div>
     );

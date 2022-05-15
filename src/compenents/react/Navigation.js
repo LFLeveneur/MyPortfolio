@@ -47,10 +47,14 @@ const Navigation = () => {
                         <li><NavLink to="/Works" >Works</NavLink></li>
                         <li><NavLink to="/Services" >Services</NavLink></li>
                         <li><NavLink to="/About" >About</NavLink></li>
-                        <li><NavLink to="/Contact" className="no"><button className="btn-contact">Contact</button></NavLink></li>
+                        
+                        {/* Come in soon in V2 */}
+                        {/* <li><NavLink to="/Contact" className="no"><button className="btn-contact">Contact</button></NavLink></li> */}
+                        
                     </ul>
                 )}
                 <button className="btn-menu" onClick={handleClick}><SvgButtonMenu /></button>
+
             </nav>
         </div>
     )

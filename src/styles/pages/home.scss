@@ -1,3 +1,11 @@
+.molang3D {
+  position: absolute;
+  z-index: -1;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   background: $black-1;
 }
@@ -33,6 +41,7 @@ body {
     width: 356px;
     color: $white-1;
     margin-bottom: 32px;
+    justify-content: center;
 }
 
 .description h1 {
@@ -77,10 +86,15 @@ body {
   height: 100%;
 }
 
-
 // ---------------------------------------------------------------------------------------------------------------------
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 1024px) {
+  .molang3D {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home {
     justify-content: flex-start;
@@ -100,11 +114,11 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 496px) {
 
   .competences {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "developer"
       "designer-ui-ux"

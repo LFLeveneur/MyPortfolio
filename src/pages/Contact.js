@@ -7,7 +7,34 @@ import { dataContact } from '../data';
 import Footer from "../compenents/react/Footer";
 import Navigation from "../compenents/react/Navigation";
 
+// 
+import { Controller, useForm } from "react-hook-form";
+import * as Yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { type } from "@testing-library/user-event/dist/type";
+
+type formValues = {
+    name: string;
+    email: string;
+    message: string;
+};
+
 const Contact = () => {
+
+    const validationSchema = Yup.object().shape({
+            name: Yup.string()
+                .required('Required'),
+            email: Yup.string()
+                .email('Invalid email address')
+                .required('Required'),
+            message: Yup.string()
+                .required('Required')
+        }).required('Required');
+
+    const { control, handleSubmit, formState: {errors} } = useForm({
+        resolver: yupResolver(validationSchema),
+    });
+
     return (
         <div className="contact">
             <Navigation />
@@ -15,19 +42,25 @@ const Contact = () => {
                 <form action="/my-handling-form-page" method="post">
                     <ul>
                         <li>
-                            <label for="name"><p>Name:</p></label>
-                            <input type="text" id="name" name="user_name" placeholder='Your Name' />
+                            <label htmlFor="name"><p>Name:</p></label>
+                            <Controller control={control} name='name' render={({field: { onChange, value }})=> (
+                                <input type="text" placeholder="Name..." onChangeText={onChange} value={value} />
+                            )} />
                         </li>
                         <li>
-                            <label for="mail"><p>E-mail:</p></label>
-                            <input type="email" id="mail" name="user_email" placeholder='Your Mail' />
+                            <label htmlFor="email"><p>E-mail:</p></label>
+                            <Controller control={control} name='email' render={({field: { onChange, value }})=> (
+                                <input type="text" placeholder="E-mail..." onChangeText={onChange} value={value} />
+                            )} />
                         </li>
                         <li>
-                            <label for="msg"><p>Message:</p></label>
-                            <textarea id="msg" name="user_message" placeholder='Your Message'></textarea>
+                            <label htmlFor="message"><p>Message:</p></label>
+                            <Controller control={control} name='message' render={({field: { onChange, value }})=> (
+                                <textarea placeholder="Message..." onChangeText={onChange} value={value} />
+                            )} />
                         </li>
                         <li>
-                            <button type="submit"><h3>Send</h3></button>
+                            <button><h3>Send</h3></button>
                         </li>
                     </ul>
                 </form>

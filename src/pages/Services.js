@@ -14,7 +14,6 @@ const Services = () => {
         <div className="services">
             <Navigation />
             <div className="services-content">
-                <h1>{dataServices.title}</h1>
                 {/* Content of the banner section in top of the page */}
                 <div className="services-info">
                     {/* Content of the right side of the banner sectio */}
@@ -54,9 +53,9 @@ const Services = () => {
                 </div>
                 <div className="services-cards">
                     {dataServices.services.map((element, i) => {
-                        const { image, title, language, description} = element;
+                        const { image, title, language, description, url} = element;
                         return (
-                            <CardService key={i} img={image} title={title} language={language} description={description} />
+                            <CardService key={i} img={image} title={title} language={language} description={description} url={url} />
                         );
                     })}
                 </div>

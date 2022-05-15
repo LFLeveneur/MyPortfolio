@@ -83,3 +83,45 @@
     right: 50%;
     transform: translate(-50% , -50%);
 }
+
+// --------------------------------------------------------------
+// Media Queries
+// --------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+    // Border img Hover
+    .card-competence-img-hover {
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    // Border img
+    .card-competence-img {
+        width: 90%;
+        height: 80%;
+    }
+    
+    // Border img Hover
+    .card-competence-img-hover {
+        border-radius: 8px;
+        margin: 4px;
+    }
+    
+    // img
+    .card-competence-img-img {
+        margin: 8px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    // img Hover
+    .card-competence-img-img-hover {
+        margin: 0px;
+    }
+    
+    // Card text
+    .card-competence-text {
+        width: 80%;
+        padding: 16px;
+    }
+}

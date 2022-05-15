@@ -16,6 +16,7 @@ const About = () => {
                 <p>{dataAbout.text1}</p>
                 <br/>
                 <p>{dataAbout.text2}</p>
+                <a href={dataAbout.cv} target='_blank'><button className="btn-cv">My CV</button></a>
             </div>
             <Footer />
         </div>

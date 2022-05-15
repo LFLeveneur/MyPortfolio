@@ -7,11 +7,19 @@ import SvgDribble from './svg-icon/SvgDribble';
 import SvgLinkedin from './svg-icon/SvgLinkedin';
 
 const Footer = () => {
+    
+
     return (
         <div className="footer">
-            <IconButton text='louisf.leveneur@gmail.com' svg={<SvgMail />}/>
-            <IconButton text='LEVENEUR' svg={<SvgDribble />}/>
-            <IconButton text='Louis Leveneur' svg={<SvgLinkedin />}/>
+            <a href='mailto:louisf.leveneur@gmail.com' >
+                <IconButton text='louisf.leveneur@gmail.com' svg={<SvgMail />}/>
+            </a>
+            <a href='https://dribbble.com/LEVENEUR' target='_blank' rel='noreferrer'>
+                <IconButton text='LEVENEUR' svg={<SvgDribble />}/>
+            </a>
+            <a href='https://www.linkedin.com/in/louis-leveneur-74410b1b9/' target='_blank' rel='noreferrer'>
+                <IconButton text='Louis Leveneur' svg={<SvgLinkedin />}/>
+            </a>
         </div>
     )
 }

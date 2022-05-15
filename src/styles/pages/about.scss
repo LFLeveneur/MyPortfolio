@@ -27,6 +27,20 @@
     font-size: 1.5rem;
 }
 
+.about-content a {
+    width: 100%;
+}
+
+.btn-cv {
+    background-color: $orange-1;
+    color: $white-1;
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
     .about-content * {
         width: 80%;
@@ -41,6 +55,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .about {
+        justify-content: flex-start;
+    }
     .about-content * {
         width: 100%;
     }

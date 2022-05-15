@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import imgMolang3D from '../assets/img/png/molang3D.png';
 
 // Fill data
 import { dataHome } from '../data';
@@ -10,7 +11,7 @@ import CardCompetence from '../compenents/react/CardCompetence';
 import Footer from '../compenents/react/Footer';
 
 // Fill img
-import Developer from '../assets/img/png/card-competence/developer.jpg';
+import Developer from '../assets/img/png/card-competence/developer.png';
 import Designer3D from '../assets/img/png/card-competence/3d-designer.png';
 import DesignerUIUX from '../assets/img/png/card-competence/uiux-designer.png';
 
@@ -18,6 +19,7 @@ import DesignerUIUX from '../assets/img/png/card-competence/uiux-designer.png';
 /* import Model from '../compenents/three/model'; */
 
 const Home = () => {
+
     return (
         <div className="home">
             <Navigation />
@@ -27,6 +29,7 @@ const Home = () => {
                     <h1>{dataHome.titleH1}</h1>
                     <p>{dataHome.description}</p>
                 </div>
+                <img src={imgMolang3D} alt="molang3D" className='molang3D'/>
                 {/* <Model className='model' /> */}
                 <div className="competences">
                     <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}} className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></Link>

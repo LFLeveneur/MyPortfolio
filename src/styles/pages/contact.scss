@@ -51,6 +51,7 @@
     background-color: $black-1;
     border: 2px solid $black-2;
     border-radius: 8px;
+    color: $white-1;
     padding: 20px;
     margin-bottom: 32px;
     width: 100%;
@@ -65,14 +66,12 @@
 
 @media screen and (max-width: 1024px) {
     .contact form {
-        color: $white-1;
         width: 80%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .contact form {
-        color: $white-1;
         width: 100%;
     }
 }
