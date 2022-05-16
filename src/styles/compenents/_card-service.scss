@@ -51,6 +51,18 @@
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 320px) and (max-width: 991px) {
+    .services-info h4 {
+        font-size: 2rem;
+    }
+
+    .services-info h2 {
+        font-size: 3rem;
+    }
+
+    .services-info p {
+        font-size: 1.5rem;
+    }
+
     .card-service {
         flex-direction: column;
     }
@@ -59,5 +71,18 @@
         width: 100%;
         margin-right: 0px;
         margin-bottom: 16px;
+    }
+
+    .card-service-content h2 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+    }
+
+    .card-service-content ul {
+        margin-bottom: 32px;
+    }
+
+    .card-service-content h6 {
+        font-size: 1rem;
     }
 }

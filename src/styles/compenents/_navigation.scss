@@ -118,7 +118,14 @@ nav li {
         background: none;
         justify-content: space-between;
         max-width: 100%;
-        width: 100%;
+        width: 90%;
+        padding: 4px 0px;
+        position: relative
+    }
+
+    // Font
+    nav a, nav button {
+        font-size: 2rem;
     }
     
     // Logo
@@ -138,8 +145,8 @@ nav li {
         background: $black-2;
         border-radius: 8px;
         position: absolute;
-        right: 12px;
-        top: 56px;
+        right: 0;
+        top: 64px;
     }
 
     nav li:last-child {

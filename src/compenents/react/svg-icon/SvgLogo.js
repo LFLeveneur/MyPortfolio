@@ -2,6 +2,7 @@ import * as React from "react";
 
 const SvgLogo = () => (
     <svg
+    id="svg-logo"
     width={32}
     height={32}
     fill="none"

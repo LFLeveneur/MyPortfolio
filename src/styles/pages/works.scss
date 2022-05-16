@@ -77,3 +77,63 @@ input[type="radio"]:checked::after {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    // Filter
+    .works-filter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+    .works-filter h4 {
+        font-size: 1.5rem;
+    }
+
+    .works-filter ul {
+        justify-content: center;
+        border-radius: 56px;
+        padding: 8px 16px;
+    }
+
+    .works-filter li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 32px;
+    }
+
+    input[type="radio"] {
+        width: 44px;
+        height: 44px;
+        margin-right: 8px;
+    }
+
+    input[type="radio"]::after {
+        width: 44px;
+        height: 44px;
+    }
+
+    input[type="radio"]:checked::after {
+        width: 28px;
+        height: 28px;
+        border: 8px solid $white-1;
+    }
+
+    .works-filter button {
+        padding: 8px 32px;
+        border-radius: 56px;
+        margin-top: 16px;
+        position: absolute;
+        left: 50%;
+        top: 150%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+
+    .works-filter button h4 {
+        font-size: 2rem;
+    }
+}
