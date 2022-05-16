@@ -113,7 +113,7 @@ nav li {
 // Media Queries
 // --------------------------------------------------------------
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 991px) {
     nav {
         background: none;
         justify-content: space-between;

@@ -89,13 +89,13 @@ body {
 // ---------------------------------------------------------------------------------------------------------------------
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
   .molang3D {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 991px) {
   .home {
     justify-content: flex-start;
     height: 100%;
@@ -114,7 +114,7 @@ body {
   }
 }
 
-@media screen and (max-width: 496px) {
+@media only screen and (min-width: 320px) and (max-width: 991px){
 
   .competences {
     grid-template-columns: 1fr;
