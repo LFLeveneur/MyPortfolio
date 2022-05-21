@@ -19,12 +19,8 @@
 }
 
 .about-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 32px;
-}
-
-.about-content p {
-    font-size: 1.5rem;
+    font-size: $biggest-font-size;
+    margin-bottom: 1rem;
 }
 
 .about-content a {
@@ -32,45 +28,28 @@
 }
 
 .btn-cv {
-    background-color: $orange-1;
-    color: $white-1;
-    font-size: 1.2rem;
-    padding: 8px;
-    border-radius: 8px;
-    margin-top: 32px;
+    background-color: $orange;
+    color: $white;
+    font-size: $normal-font-size;
+    font-weight: $font-semi-bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
     cursor: pointer;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
+@media #{$screen-tablet} {
     .about-content * {
         width: 80%;
     }
-    .about-content h1 {
-        font-size: 2.3rem;
-    }
-    
-    .about-content p {
-        font-size: 1.3rem;
-    }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
+@media #{$screen-mobile} {
     .about {
         justify-content: flex-start;
+        height: 100%;
     }
     .about-content * {
         width: 100%;
-    }
-    .about-content h1 {
-        font-size: 5rem;
-    }
-    
-    .about-content p {
-        font-size: 1.5rem;
-    }
-
-    .btn-cv {
-        font-size: 2rem;
-        margin-top: 64px;
     }
 }

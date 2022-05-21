@@ -2,18 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px;
-    background-color: $black-2;
-    border-radius: 8px;
+    padding: 0.5rem;
+    background-color: $black-light;
+    border-radius: 0.5rem;
     width: 100%;
 }
 
 .card-service img {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     width: 30%;
     height: auto;
     object-fit: cover;
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .card-service-content {
@@ -24,34 +24,47 @@
 }
 
 .card-service-content h2 {
-    margin-bottom: 8px;
+    font-size: $h1-font-size;
+    font-weight: $font-bold;
+    margin-bottom: 0.5rem;
 }
 
 .card-service-content ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .card-service-content li {
-    margin-right: 8px;
-    background-color: $black-1;
-    border-radius: 56px;
-    border: 1px solid $white-1;
-    padding: 4px 8px;
-    margin-bottom: 8px;
+    margin-right: 0.5rem;
+    background-color: $black-darck;
+    border-radius: 3.5rem;
+    border: 0.0625rem solid $white;
+    padding: 0.125rem 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: $smaller-font-size;
+    font-weight: $font-semi-bold;
 }
 
 .card-service-content p {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+.btn-url-view {
+    background-color: $orange;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    font-size: $h3-font-size;
+    font-weight: $font-semi-bold;
+    color: $white;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-    .services-info h4 {
+@media #{$screen-mobile} {
+/*     .services-info h4 {
         font-size: 2rem;
     }
 
@@ -61,7 +74,7 @@
 
     .services-info p {
         font-size: 1.5rem;
-    }
+    } */
 
     .card-service {
         flex-direction: column;
@@ -70,16 +83,16 @@
     .card-service img {
         width: 100%;
         margin-right: 0px;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     .card-service-content h2 {
-        font-size: 3rem;
-        margin-bottom: 16px;
+        /* font-size: 3rem; */
+        margin-bottom: 1rem;
     }
 
     .card-service-content ul {
-        margin-bottom: 32px;
+        margin-bottom: 2reem;
     }
 
     .card-service-content h6 {

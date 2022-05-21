@@ -4,47 +4,62 @@
     align-items: center;
     width: 100%;
     position: fixed;
-    top: 32px;
+    top: 2rem;
     z-index: 998;
 }
 
 nav {
-    background: $black-2;
+    background: $black-light;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     max-width: 80%;
-    padding: 4px 12px;
-    border-radius: 56px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3.5rem;
 }
 
 // Font
 nav a, nav button {
-    color: $white-2;
-    font-size: 16px;
+    color: $white;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 // Logo
-
-nav svg {
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.125rem solid $white;
 }
 
-.no #svg-logo-bg {
-    fill: $black-1;
+// Logo defaut color
+#svg-logo-stroke {
+    fill: $white;
 }
 
-.no.active #svg-logo-bg {
-    fill: $orange-1;
-} 
+#svg-logo-bg {
+    fill: $orange;
+}
 
-.no.active #svg-logo-stroke {
-    stroke: $orange-1;
+// Logo not active
+.logo #svg-logo-bg {
+    fill: $black-darck;
+}
+
+
+// Logo active
+.logo.active {
+    border: none;
+}
+
+.logo.active #svg-logo-bg {
+    fill: $orange;
 }
 
 // Menu
@@ -53,31 +68,31 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 16px;
+    margin: 0 0 0 1rem;
 }
 
 // Come in soon in V2 with the button contact
 /* nav li:last-child {
-    margin-left: 32px;
+    margin-left: 2rem;
 } */
 
 nav li {
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 // Contact
 .btn-contact {
-    padding: 4px 24px;
-    color: $white-1;
+    padding: 0.25rem 1.5rem;
+    color: $white;
     background: none;
-    border: solid 2px $white-1;
-    border-radius: 56px;
+    border: solid 0.125rem $white;
+    border-radius: 3.5rem;
     cursor: pointer;
 }
 
 .active .btn-contact {
-    background: $orange-1;
-    border: solid 2px $orange-1;
+    background: $orange;
+    border: solid 0.125rem $orange;
 }
 
 // Menu Mobile
@@ -89,20 +104,20 @@ nav li {
 .active::before {
     content: '';
     position: absolute;
-    background: $orange-1;
-    width: 4px;
-    height: 4px;
+    background: $orange;
+    width: 0.25rem;
+    height: 0.25rem;
     transform: translate(-50%, -50%);
     left: 50%;
     bottom: 0;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 nav li {
     position: relative;
 }
 
-.no.active::before {
+.logo.active::before {
     display: none;
 }
 
@@ -113,51 +128,51 @@ nav li {
 // Media Queries
 // --------------------------------------------------------------
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
+@media #{$screen-mobile} {
     nav {
         background: none;
         justify-content: space-between;
         max-width: 100%;
         width: 90%;
-        padding: 4px 0px;
+        padding: 0.25rem 0px;
         position: relative
     }
 
     // Font
     nav a, nav button {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     
     // Logo
     /* .no #svg-logo-bg {
-        fill: $orange-1;
+        fill: $orange;
     }
 
     .no #svg-logo-stroke {
-        stroke: $orange-1;
+        stroke: $orange;
     } */
 
     // Menu
     nav ul {
         flex-direction: column;
         align-items: flex-start;
-        padding: 12px;
-        background: $black-2;
-        border-radius: 8px;
+        padding: 0.75rem;
+        background: $black-light;
+        border-radius: 0.5rem;
         position: absolute;
         right: 0;
-        top: 64px;
+        top: 4rem
     }
 
     nav li:last-child {
         margin-left: 0;
-        /* margin-top: 16px; */
+        /* margin-top: 1rem; */
     }
 
     // Contact
     /* .btn-contact {
-        background: $orange-1;
-        border: solid 2px $orange-1;
+        background: $orange;
+        border: solid 0.125rem $orange;
     } */
 
     // Menu mobile
@@ -166,7 +181,16 @@ nav li {
         background: none;
     }
 
-    .btn-menu svg rect {
-        fill: $black-1;
+    .btn-menu svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #svg-menu-bg {
+        fill: $black-light;
+    }
+
+    #svg-menu-stroke {
+        fill: $white;
     }
 }

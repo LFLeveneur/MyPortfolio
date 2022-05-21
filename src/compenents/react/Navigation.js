@@ -19,7 +19,7 @@ const Navigation = () => {
             setWidthScreen(window.innerWidth);
 
             // If the screen is bigger than 768px, the menu will be close
-            if (widthScreen > 768) {
+            if (widthScreen > 991) {
                 setIsOpen(false);
             }
         }
@@ -37,12 +37,12 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <nav>
-                <NavLink to="/" className="no">
+                <NavLink to="/" className="logo">
                     {SvgLogo}
                 </NavLink>
                 
                 {/* If isOpen is true, or the screen is bigger than 768px, the menu will be open/display */}
-                {(isOpen || widthScreen > 768) && (
+                {(isOpen || widthScreen > 991) && (
                     <ul>
                         <li><NavLink to="/Works" >Works</NavLink></li>
                         <li><NavLink to="/Services" >Services</NavLink></li>
@@ -54,7 +54,6 @@ const Navigation = () => {
                     </ul>
                 )}
                 <button className="btn-menu" onClick={handleClick}><SvgButtonMenu /></button>
-
             </nav>
         </div>
     )

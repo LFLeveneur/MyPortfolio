@@ -11,14 +11,14 @@ const CardService = ({img, title, language, description, url}) => {
                     <ul>
                         {language.map((element, i) => {
                             return (
-                                <li key={i}><h6>{element}</h6></li>
+                                <li key={i}>{element}</li>
                             );
                         }
                         )}
                     </ul>
                     {/* <p>{description}</p> */}
                 </div>
-                <button className="btn-url-view"><Link to='/works'><h3>View all project</h3></Link></button>
+                <button className="btn-url-view"><Link to='/works'>View all project</Link></button>
             </div>
         </div>
     );

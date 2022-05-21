@@ -4,42 +4,46 @@
     justify-content: space-between;
     width: 25vw;
     min-height: 100%;
-    border-radius: 8px;
-    background-color: $black-2;
-    padding: 8px;
-    margin: 16px;
+    border-radius: 0.5rem;
+    background-color: $black-light;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .card-project img {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .card-project h2 {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    font-size: $h1-font-size;
+    font-weight: $font-bold;
 }
 
 .card-project ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .card-project li {
-    margin-right: 8px;
-    background-color: $black-1;
-    border-radius: 56px;
-    border: 1px solid $white-1;
-    padding: 4px 8px;
-    margin-bottom: 8px;
+    margin-right: 0.5rem;
+    background-color: $black-darck;
+    border-radius: 3.5rem;
+    border: 0.125rem solid $white;
+    padding: 0.125rem 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: $smaller-font-size;
+    font-weight: $font-semi-bold;
 }
 
 .card-project p {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .card-project-links {
@@ -50,70 +54,39 @@
 }
 
 .btn-url-git-hub {
-    background-color: $white-2;
-    padding: 3px 4px 1px 4px;
-    border-radius: 8px;
-    margin-right: 8px;
+    background-color: $white;
+    padding: 0.1875rem 0.25rem 0.125rem 0.25rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.btn-url-git-hub {
+    width: 2rem;
+    height: 2rem;
+    fill: $black-darck;
 }
 
 .btn-url-view {
-    background-color: $orange-1;
+    background-color: $orange;
     width: 100%;
-    height: 32px;
-    padding: 4px;
-    border-radius: 8px;
+    height: 2rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
+@media #{$screen-tablet} {
     .card-project {
         width: 35vw;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
+@media #{$screen-mobile} {
     .card-project {
         width: 80%;
-        margin-bottom: 44px;
-        border-radius: 32px;
-        padding: 16px;
-    }
-    
-    .card-project img {
-        border-radius: 24px;
-        margin-bottom: 16px;
-    }
-    
-    .card-project h2 {
-        margin-bottom: 16px;
-        font-size: 3rem;
-    }
-    
-    .card-project ul {
-        margin-bottom: 32px;
-    }
-
-    .card-project h6 {
-        font-size: 1rem;
-    }
-    
-    .card-project p {
-        font-size: 2rem;
     }
     
     .btn-url-git-hub {
-        padding: 16px 16px 15px 16px;
-        border-radius: 8px;
-        margin-right: 8px;
-    }
-    
-    .btn-url-view {
-        width: 100%;
-        height: auto;
-        padding: 8px;
-        border-radius: 8px;
-    }
-
-    .btn-url-view h3 {
-        font-size: 2rem;
+        height: 100%;
+        width: 64px;
     }
 }

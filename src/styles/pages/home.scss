@@ -7,7 +7,7 @@
 }
 
 body {
-  background: $black-1;
+  background: $black-darck;
 }
 
 .model {
@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 356px;
-    color: $white-1;
+    color: $white;
     margin-bottom: 32px;
     justify-content: center;
 }
@@ -89,7 +89,7 @@ body {
 // ---------------------------------------------------------------------------------------------------------------------
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
+@media #{$screen-tablet}{
   .molang3D {
     display: none;
   }
@@ -114,7 +114,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991px){
+@media #{$screen-mobile}{
 
   .competences {
     grid-template-columns: 1fr;

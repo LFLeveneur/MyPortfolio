@@ -23,7 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -40,16 +40,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .services-info-content li {
-    margin-right: 8px;
-    background-color: $black-1;
-    border-radius: 56px;
-    border: 1px solid $white-1;
-    padding: 4px 16px;
-    margin-bottom: 8px;
+    margin-right: 0.5rem;
+    background-color: $black-darck;
+    border-radius: 3.5rem;
+    border: 0.0625rem solid $white;
+    padding: 0.25rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: $normal-font-size;
+    font-weight: $font-bold;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -67,34 +69,34 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .services-info-available>div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $black-2;
-    padding: 4px 16px;
-    border-radius: 56px;
-    margin-bottom: 8px;
+    background-color: $black-light;
+    padding: 0.25rem 1rem;
+    border-radius: 3.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .services-info-available>div p{
-    color: $red-1;
+    color: $red;
 }
 
 .services-info-available-cercle {
     display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 56px;
-    border: solid 4px $red-1;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: solid 0.25rem $red;
     margin-right: 8px;
 }
 
 .services-info-available>p {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 // Content of the services : price and experience
@@ -104,20 +106,20 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-radius: 8px;
-    background-color: $black-2;
+    border-radius: 0.5rem;
+    background-color: $black-light;
 }
 
 .services-info-price-experience div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
 }
 
 .services-info-price-experience div:first-child {
-    border: solid 1px $white-1;
-    border-radius: 8px 0 0 8px;
+    border: solid 1px $white;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -130,13 +132,13 @@
 }
 
 .services-cards .card-service:first-child {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Media queries
 // ---------------------------------------------------------------------------------------------------------------------
-@media screen and (min-width: 992px) and (max-width: 1024px) {
+@media #{$screen-tablet} {
     .services {
         justify-content: flex-start;
         height: 100%;
@@ -150,11 +152,11 @@
     
     .services-cards .card-service:first-child {
         margin-right: 0;
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991px) {
+@media #{$screen-mobile} {
     .services {
         justify-content: flex-start;
         height: 100%;
@@ -168,18 +170,18 @@
     
     .services-cards .card-service:first-child {
         margin-right: 0;
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
     
     // Content of the banner section in top of the page
     .services-info {
         flex-direction: column;
-        margin-bottom: 64px;
+        margin-bottom: 4rem;
     }
     
     // Content of the right side of the banner section
     .services-info-content {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 
     // Content of the left side of the banner section
@@ -194,6 +196,6 @@
     }
 
     .services-info-available>p {
-        margin-left: 16px;
+        margin-left: 2rem;
     }
 }

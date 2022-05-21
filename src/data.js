@@ -35,7 +35,7 @@ export const dataWorks = {
             type: 'Developer',
             image: imgPortfolio,
             title: 'Portfolio',
-            language: ['HTML', 'CSS', 'React', 'Node.js', 'SCSS'],
+            language: ['HTML', 'CSS', 'React', 'SCSS'],
             description: 'Here is the first version of my new fiat portfolio in React (first project in React that I realize)',
             urlGitHub: 'https://github.com/LFLeveneur/MyPortfolio',
             url: 'https://www.louisleveneur.ml',
@@ -174,7 +174,7 @@ export const dataServices = {
         {
             image: imgServiceDeveloper,
             title: 'Developer',
-            language: ['HTML', 'CSS', 'React', 'Node.js', 'SCSS'],
+            language: ['HTML', 'CSS', 'React', 'SCSS'],
             description: '',
             url: '',
         },

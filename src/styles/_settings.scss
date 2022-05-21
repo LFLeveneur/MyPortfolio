@@ -8,18 +8,21 @@
     text-decoration: none;
     border: none;
     list-style: none;
+    outline: none;
 }
+
+$screen-tablet: only screen and (min-width: 992px) and (max-width: 1024px);
+$screen-mobile: only screen and (min-width: 320px) and (max-width: 991px);
 
 // --------------------------------------------------------------
 // Colors
 // --------------------------------------------------------------
 
-$black-1: #121316;
-$black-2: #181A1D;
-$white-1: #FFFFFF;
-$white-2: #F6F6F6;
-$orange-1: #F2994A;
-$red-1: #F24A4A;
+$black-darck: #121316;
+$black-light: #181A1D;
+$white: #FFFFFF;
+$orange: #F2994A;
+$red: #F24A4A;
 
 // --------------------------------------------------------------
 // Typography
@@ -27,16 +30,53 @@ $red-1: #F24A4A;
 
 $satoshi-font: 'Satoshi-Variable', sans-serif;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $satoshi-font;
-    font-weight: 900;
-    font-style: normal;
-    color: $white-1;
+// Font sizes
+
+$biggest-font-size: 2.25rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+// Font weights
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 800;
+
+// Responsive
+@media #{$screen-mobile} {
+    html {
+        font-size: 32px;
+    }
+    /* $biggest-font-size: 4rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: 0.875rem;
+    $smaller-font-size: 0.813rem; */
 }
 
-p, a, {
+// --------------------------------------------------------------
+// Base
+// --------------------------------------------------------------
+body {
     font-family: $satoshi-font;
-    font-weight: 300;
-    font-style: normal;
-    color: $white-1;
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+    color: $white;
 }
+
+h1, h2, h3 {
+    font-weight: $font-semi-bold;
+}
+
+h1 {font-size: $h1-font-size}
+
+h2 {font-size: $h2-font-size}
+
+h3 {font-size: $h3-font-size}
+
+a {color: $white;}

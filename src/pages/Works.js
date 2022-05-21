@@ -23,11 +23,11 @@ const Works = () => {
                         {compenentsTypes.map((types, i) => {
                             return <li key={i}>
                                 <input type="radio" name="compenentsTypes" id={types} checked={types === selectedCompetentceType} onChange={(event) => setSelectedCompetentceType(event.target.id)}/>
-                                <label htmlFor={types}><h4>{types}</h4></label>
+                                <label htmlFor={types}>{types}</label>
                             </li>
                         })}
                         {selectedCompetentceType && (
-                            <li style={{paddingRight: 0}}><button onClick={() => setSelectedCompetentceType("")}><h4>See all</h4></button></li>
+                            <li style={{paddingRight: 0}}><button onClick={() => setSelectedCompetentceType("")}>See all</button></li>
                         )}
                     </ul>
                 </div>

@@ -21,7 +21,7 @@ const Services = () => {
                         <ul>
                             {dataServices.myServices.map((element, i) => {
                                 return (
-                                    <li key={i}><h4>{element}</h4></li>
+                                    <li key={i}>{element}</li>
                                 );
                             }
                             )}
