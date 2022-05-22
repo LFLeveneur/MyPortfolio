@@ -18,7 +18,7 @@ const CardService = ({img, title, language, description, url}) => {
                     </ul>
                     {/* <p>{description}</p> */}
                 </div>
-                <button className="btn-url-view"><Link to='/works'>View all project</Link></button>
+                <button className="btn-url-view"><Link to='/works' state={{compenentsTypesState: title}}>View all project</Link></button>
             </div>
         </div>
     );

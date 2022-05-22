@@ -180,7 +180,7 @@ export const dataServices = {
         },
         {
             image: imgServiceDesigner,
-            title: 'UI/UX Designer',
+            title: 'Designer UI/UX',
             language: ['Figma', 'Adobe'],
             description: '',
             url: '',

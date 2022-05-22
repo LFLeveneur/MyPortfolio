@@ -44,7 +44,8 @@ const Navigation = () => {
                 {/* If isOpen is true, or the screen is bigger than 768px, the menu will be open/display */}
                 {(isOpen || widthScreen > 991) && (
                     <ul>
-                        <li><NavLink to="/Works" >Works</NavLink></li>
+                        {/* use state "" to display the all projects */}
+                        <li><NavLink to="/Works" state={{compenentsTypesState: ""}} >Works</NavLink></li>
                         <li><NavLink to="/Services" >Services</NavLink></li>
                         <li><NavLink to="/About" >About</NavLink></li>
                         
