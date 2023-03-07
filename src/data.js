@@ -58,7 +58,7 @@ export const dataWorks = {
             language: ['HTML', 'CSS', 'PHP', 'Wordpress'],
             description: 'For this project I was able to use the wordpress CMS, as well as PHP. The goal was to create a system of filter, search and display of Yu-Gi-Oh map.',
             urlGitHub: 'https://github.com/LFLeveneur/Yu-Gi-Oh-Card',
-            url: 'https://hh-test-3.fr/Yu-Gi-Oh/'
+            url: 'https://www.figma.com/file/cwcUno7b2jD6xkIyxGX2em/Yu-Gi-Yo?node-id=0%3A1&t=AJwtsuLohK5EaLnd-1'
         },
         {
             id: 11,
@@ -67,7 +67,7 @@ export const dataWorks = {
             title: 'TheWonders',
             language: ['Blender'],
             description: '3D realization of a snow house in 4 hours with the help of an image.',
-            url: '',
+            url: 'https://dribbble.com/shots/20204111-House-Snow-3D',
         },
         {
             id: 10,
@@ -85,7 +85,7 @@ export const dataWorks = {
             title: 'Tample Japonais',
             language: ['Blender'],
             description: '3D realization of a Japanese Temple in 6 hours with the help of an image.',
-            url: '',
+            url: 'https://dribbble.com/shots/20204060-Temple-japonais-3D',
         },
         {
             id: 8,
@@ -149,7 +149,7 @@ export const dataWorks = {
             title: 'Heretic',
             language: ['Python', 'Illustrator'],
             description: "Heretic is the first project i ever developped with the help of a friend. It was a project where we had to make a textual RPG game in less than 2 months. It is a reproduction of Hetic where i'm a first year student.",
-            url: 'https://www.linkedin.com/posts/thanh-long-pham-9942111b9_hetic-python-firstproject-ugcPost-6760007814405599232-3w8e?utm_source=linkedin_share&utm_medium=member_desktop_web',
+            url: 'https://www.linkedin.com/feed/update/urn:li:activity:6760008194174656512/',
             urlGitHub: 'https://github.com/LFLeveneur/Heretic',
         },
         {
@@ -166,10 +166,10 @@ export const dataWorks = {
 
 export const dataServices = {
     myServices: [ 'Developeur Front ', 'UI/UX design' ],
-    available: 'Unavailable for the moment',
-    availableDate: 'Until 05/09/2020',
-    price: '150€ /day',
-    experience: '2 year',
+    available: 'Available for freelance work',
+    availableDate: '01/01/2023',
+    price: '300€ /day',
+    experience: '3 year',
     services: [
         {
             image: imgServiceDeveloper,
