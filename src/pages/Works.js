@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // Fill data
 import { dataWorks } from '../data';
@@ -8,23 +8,11 @@ import { dataWorks } from '../data';
 import Navigation from "../compenents/react/Navigation";
 import CardProject from "../compenents/react/CardProject";
 import Footer from "../compenents/react/Footer";
-import { useLocation } from 'react-router';
 
 const Works = () => {
-    // Recover the state of the url
-    const location = useLocation();
-    const compenentsTypesLocationState = location.state;
 
-    // Define the variable of the state
     const [selectedCompetentceType, setSelectedCompetentceType] = useState("");
     const compenentsTypes = ["Developer", "Designer 3D", "Designer UI/UX"];
-
-    useEffect(() => {
-        // Use the state of the url to display the right projects
-        if (compenentsTypesLocationState) {
-            setSelectedCompetentceType(compenentsTypesLocationState.compenentsTypesState);
-        }
-    }, [compenentsTypesLocationState]);
 
     return (
         <div className="works">

@@ -32,9 +32,9 @@ const Home = () => {
                 <img src={imgMolang3D} alt="molang3D" className='molang3D'/>
                 {/* <Model className='model' /> */}
                 <div className="competences">
-                    <Link to={"/works"} state={{compenentsTypesState: "Developer"}} className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></Link>
-                    <Link to={"/works"} state={{compenentsTypesState: "Designer 3D"}} className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></Link>
-                    <Link to={"/works"} state={{compenentsTypesState: "Designer UI/UX"}} className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence={dataHome.competences[2]} /></Link>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}} className='competence developer'><CardCompetence img={Developer} competence={dataHome.competences[0]} /></Link>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}} className='competence designer-3d'><CardCompetence img={Designer3D} competence={dataHome.competences[1]} /></Link>
+                    <Link to={{pathname: "/works", state: {selectedCompetentceType: "Developer"}}} className='competence designer-ui-ux'><CardCompetence img={DesignerUIUX} competence={dataHome.competences[2]} /></Link>
                 </div>
             </div>
             <Footer />
